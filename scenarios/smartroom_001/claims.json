@@ -1,0 +1,62 @@
+{
+  "scene_id": "smartroom_001",
+  "source": "TeLLMe",
+  "source_answer": "A person is sitting on the chair.",
+  "entities": [
+    {
+      "local_id": "ent_001",
+      "type": "person"
+    },
+    {
+      "local_id": "ent_002",
+      "type": "chair"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_001",
+      "claim_type": "attribute",
+      "subject": {
+        "local_id": "ent_001",
+        "type": "person"
+      },
+      "predicate": "state",
+      "object": null,
+      "property_value": "sitting",
+      "count": {
+        "value": 1,
+        "operator": "exact",
+        "scope": "subject",
+        "unit": "person"
+      },
+      "time": null,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "A person is sitting."
+    },
+    {
+      "claim_id": "claim_002",
+      "claim_type": "relation",
+      "subject": {
+        "local_id": "ent_001",
+        "type": "person"
+      },
+      "predicate": "on",
+      "object": {
+        "local_id": "ent_002",
+        "type": "chair"
+      },
+      "property_value": null,
+      "count": {
+        "value": 1,
+        "operator": "exact",
+        "scope": "subject",
+        "unit": "person"
+      },
+      "time": null,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "A person is on the chair."
+    }
+  ]
+}

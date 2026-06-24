@@ -1,0 +1,49 @@
+{
+  "scene_id": "smartroom_001",
+  "summary": {
+    "total_claims": 2,
+    "supported": 2,
+    "contradicted": 0,
+    "not_evaluable": 0,
+    "by_category": {
+      "correctness": 2,
+      "hallucination": 0,
+      "omission": 0,
+      "wrong_count": 0,
+      "wrong_relation": 0,
+      "wrong_state": 0,
+      "wrong_temporal_event": 0,
+      "unsupported_answer": 0,
+      "ambiguous_answer": 0
+    },
+    "omission_check": "skipped_no_qa_expected_facts"
+  },
+  "claim_results": [
+    {
+      "claim_id": "claim_001",
+      "claim_type": "attribute",
+      "natural_language": "A person is sitting.",
+      "status": "SUPPORTED",
+      "category": "correctness",
+      "error_type": null,
+      "evidence": [
+        "Matched subject type person to 1 ground truth object(s).",
+        "Checked person_1.state == \"sitting\"."
+      ]
+    },
+    {
+      "claim_id": "claim_002",
+      "claim_type": "relation",
+      "natural_language": "A person is on the chair.",
+      "status": "SUPPORTED",
+      "category": "correctness",
+      "error_type": null,
+      "evidence": [
+        "Matched subject type person to 1 ground truth object(s).",
+        "Matched object type chair to 2 ground truth object(s).",
+        "Checked 3 relation(s) for person --on--> chair.",
+        "Matched relation person_1 --on--> chair_1."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "scene_id": "smartroom_001",
+  "timestamp_range": [
+    "2026-06-15T10:00:00Z",
+    "2026-06-15T10:05:00Z"
+  ],
+  "objects": [
+    {
+      "id": "person_1",
+      "type": "person",
+      "state": "sitting",
+      "location": "chair_1"
+    },
+    {
+      "id": "chair_1",
+      "type": "chair"
+    },
+    {
+      "id": "laptop_1",
+      "type": "laptop",
+      "location": "table_1"
+    },
+    {
+      "id": "table_1",
+      "type": "table"
+    },
+    {
+      "id": "backpack_1",
+      "type": "backpack",
+      "location": "chair_2"
+    },
+    {
+      "id": "chair_2",
+      "type": "chair"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "person_1",
+      "predicate": "on",
+      "object": "chair_1"
+    },
+    {
+      "subject": "laptop_1",
+      "predicate": "on",
+      "object": "table_1"
+    },
+    {
+      "subject": "backpack_1",
+      "predicate": "on",
+      "object": "chair_2"
+    }
+  ]
+}
