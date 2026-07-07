@@ -12,6 +12,9 @@ GroundingEval/
 ├── adapters/
 │   ├── carla_adapter.py
 │   └── smartroom_adapter.py
+├── data/
+│   ├── carla/
+│   └── smartroom/
 ├── scripts/
 │   ├── score_claims.py
 │   ├── validate_ground_truth.py
@@ -25,8 +28,7 @@ GroundingEval/
 ├── docs/
 ├── reports/
 ├── examples/
-├── tests/
-└── external_data/
+└── tests/
 ```
 
 ## Pipeline
@@ -51,8 +53,9 @@ Evaluation Report
 
 ## Adapters
 
-- `adapters/carla_adapter.py` will load one CARLA simulation folder, discover available modalities, normalize RGB frames, JSON logs, semantic segmentation, trajectories, optional lidar, optional video, and return a normalized scene representation.
-- `adapters/smartroom_adapter.py` will load one Smart Room recording, use `metadata.json` when available, discover camera streams, timestamps, calibration, scripted events, and return a normalized scene representation.
+- `adapters/carla_adapter.py` inspects one local CARLA simulation folder, discovers MP4 videos, RGB frames, JSON logs, semantic segmentation, lidar files, and returns normalized paths, counts, and modalities.
+- `adapters/smartroom_adapter.py` inspects one local Smart Room recording folder, discovers camera/video files, optional frames, optional sensors, optional `metadata.json`, and returns normalized paths, counts, and modalities.
+- Adapters are lightweight dataset discovery modules. They should not pull raw data from another repository or load large media/sensor payloads into memory.
 
 ## Scenario Sources
 
@@ -61,11 +64,30 @@ Evaluation Report
 
 ## Local Data
 
-- `external_data/` is for local links or raw dataset paths and should not be committed.
+- `data/` is the local raw input data area and is ignored by git except for `.gitkeep` placeholders.
+- `data/carla/` contains CARLA simulations, for example `data/carla/simulation_45/`.
+- `data/smartroom/` contains Smart Room recordings, for example `data/smartroom/recording_001/`.
+- Raw videos, frames, lidar, and sensor dumps should stay local and should not be committed.
+
+Example local CARLA input:
+
+```text
+data/carla/simulation_45/
+├── simulation_45.mp4
+├── frames/
+├── json/
+├── semseg/
+└── lidar/
+```
 
 ## Scripts
 
 - `scripts/` contains scenario creation, VLM execution, claim conversion, validation, and scoring scripts.
+- `scripts/run_vlm_on_simulation.py` can run from local CARLA input:
+
+```bash
+python3 scripts/run_vlm_on_simulation.py --sim-dir data/carla/simulation_45 --scene-id carla_simulation_45 --input-mode auto --model-path /home/native/internvl3/InternVL/pretrained/InternVL3-9B
+```
 
 ## Scenario Layout
 

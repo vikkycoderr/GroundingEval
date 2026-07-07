@@ -54,7 +54,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--sim-dir",
         required=True,
-        help="Path to one CARLA simulation folder, such as simulation_45.",
+        help="Path to one CARLA simulation folder, such as data/carla/simulation_45. Absolute paths are also supported.",
     )
     parser.add_argument(
         "--scene-id",
@@ -523,8 +523,7 @@ def print_example_commands() -> None:
     print("Auto mode for simulation_45:")
     print(
         "python3 scripts/run_vlm_on_simulation.py "
-        "--sim-dir /Users/vikhyatkulshrestha/Desktop/Smartroom_Carla_Dataset/"
-        "smartroom-autolabeling/data/carla_dataset/simulation_45 "
+        "--sim-dir data/carla/simulation_45 "
         "--scene-id carla_simulation_45 "
         "--input-mode auto "
         "--model-path /home/native/internvl3/InternVL/pretrained/InternVL3-9B"
@@ -533,8 +532,7 @@ def print_example_commands() -> None:
     print("Force frames for simulation_45:")
     print(
         "python3 scripts/run_vlm_on_simulation.py "
-        "--sim-dir /Users/vikhyatkulshrestha/Desktop/Smartroom_Carla_Dataset/"
-        "smartroom-autolabeling/data/carla_dataset/simulation_45 "
+        "--sim-dir data/carla/simulation_45 "
         "--scene-id carla_simulation_45_frames "
         "--input-mode frames "
         "--model-path /home/native/internvl3/InternVL/pretrained/InternVL3-9B"
@@ -543,8 +541,7 @@ def print_example_commands() -> None:
     print("Force video for simulation_45:")
     print(
         "python3 scripts/run_vlm_on_simulation.py "
-        "--sim-dir /Users/vikhyatkulshrestha/Desktop/Smartroom_Carla_Dataset/"
-        "smartroom-autolabeling/data/carla_dataset/simulation_45 "
+        "--sim-dir data/carla/simulation_45 "
         "--scene-id carla_simulation_45_video "
         "--input-mode video "
         "--model-path /home/native/internvl3/InternVL/pretrained/InternVL3-9B"

@@ -2,6 +2,16 @@
 external_data/*
 !external_data/.gitkeep
 
+# Local raw datasets
+data/*
+!data/.gitkeep
+!data/carla/
+data/carla/*
+!data/carla/.gitkeep
+!data/smartroom/
+data/smartroom/*
+!data/smartroom/.gitkeep
+
 # Large media files
 *.mp4
 *.avi
