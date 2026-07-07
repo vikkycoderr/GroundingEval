@@ -1,3 +1,13 @@
+# External raw datasets / symlinks
+external_data/*
+!external_data/.gitkeep
+
+# Large media files
+*.mp4
+*.avi
+*.mov
+
+# Python cache
 __pycache__/
 *.pyc
 *.pyo

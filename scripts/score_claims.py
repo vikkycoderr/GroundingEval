@@ -72,7 +72,6 @@ class ClaimResult:
             "evidence": self.evidence,
         }
 
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Score structured claims against GroundingEval ground truth."
@@ -764,6 +763,17 @@ def evaluate_event_claim(
             )
 
     evidence.append("Matching event exists, but the provided claim time does not align with ground truth.")
+    if polarity == "negative":
+        evidence.append("No event matched the claimed time, so the negative claim is satisfied.")
+        return make_result(
+            claim_id,
+            claim_type,
+            natural_language,
+            STATUS_SUPPORTED,
+            "correctness",
+            evidence,
+        )
+
     return make_result(
         claim_id,
         claim_type,
