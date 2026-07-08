@@ -17,6 +17,7 @@ data/smartroom/*
 *.mp4
 *.avi
 *.mov
+!data/carla/simulation_45/simulation_45.mp4
 
 # Python cache
 __pycache__/
