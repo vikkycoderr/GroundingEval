@@ -1,0 +1,698 @@
+{
+  "scene_id": "tx_1783450626",
+  "source": "carla_groundtruth",
+  "metadata": {
+    "stopped_definition": "speed < 0.5 m/s for at least 5 consecutive ticks",
+    "missing_stopped_means": "not asserted (not false); absence does not imply the actor was moving",
+    "count_definition": "modal value across all ticks unless otherwise scoped",
+    "boundary_event": "true when actor was present at the first or last tick of the clip; true entry/exit may fall outside the trace window",
+    "tick_to_seconds": "tick index multiplied by fixed_delta_seconds"
+  },
+  "scenario_config": {
+    "weather": "ClearNoon",
+    "seed": 42,
+    "ticks": 200,
+    "maneuver": "straight",
+    "time_of_day": "day",
+    "hour": null,
+    "condition": "clear",
+    "traffic_density": "medium",
+    "start_mode": "moving",
+    "emergency_vehicles": 0,
+    "junction_type": "four_way",
+    "camera_count": 2
+  },
+  "entities": [
+    {
+      "local_id": "1921",
+      "type": "ego",
+      "name": "vehicle.tesla.model3"
+    },
+    {
+      "local_id": "1928",
+      "type": "npc_vehicle",
+      "name": "vehicle.kawasaki.ninja"
+    },
+    {
+      "local_id": "1929",
+      "type": "npc_vehicle",
+      "name": "vehicle.carlamotors.carlacola"
+    },
+    {
+      "local_id": "1930",
+      "type": "npc_vehicle",
+      "name": "vehicle.audi.a2"
+    },
+    {
+      "local_id": "1931",
+      "type": "npc_vehicle",
+      "name": "vehicle.dodge.charger_2020"
+    },
+    {
+      "local_id": "1932",
+      "type": "walker",
+      "name": "walker.pedestrian.0015"
+    },
+    {
+      "local_id": "1933",
+      "type": "walker",
+      "name": "walker.pedestrian.0010"
+    },
+    {
+      "local_id": "1934",
+      "type": "walker",
+      "name": "walker.pedestrian.0036"
+    },
+    {
+      "local_id": "intersection_468",
+      "type": "intersection"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_001",
+      "claim_type": "object_presence",
+      "subject": "1921",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "An ego vehicle is present in the scene."
+    },
+    {
+      "claim_id": "claim_002",
+      "claim_type": "object_presence",
+      "subject": "1928",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 1928 is present in the scene."
+    },
+    {
+      "claim_id": "claim_003",
+      "claim_type": "object_presence",
+      "subject": "1929",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 1929 is present in the scene."
+    },
+    {
+      "claim_id": "claim_004",
+      "claim_type": "object_presence",
+      "subject": "1930",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 1930 is present in the scene."
+    },
+    {
+      "claim_id": "claim_005",
+      "claim_type": "object_presence",
+      "subject": "1931",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 1931 is present in the scene."
+    },
+    {
+      "claim_id": "claim_006",
+      "claim_type": "object_presence",
+      "subject": "1932",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1932 is present in the scene."
+    },
+    {
+      "claim_id": "claim_007",
+      "claim_type": "object_presence",
+      "subject": "1933",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1933 is present in the scene."
+    },
+    {
+      "claim_id": "claim_008",
+      "claim_type": "object_presence",
+      "subject": "1934",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1934 is present in the scene."
+    },
+    {
+      "claim_id": "claim_009",
+      "claim_type": "object_presence",
+      "subject": "intersection_468",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "The intersection is present in the scene."
+    },
+    {
+      "claim_id": "claim_010",
+      "claim_type": "count",
+      "subject": "npc_vehicle",
+      "predicate": "count",
+      "object": null,
+      "property_value": {
+        "value": 0,
+        "scope": "near_intersection",
+        "definition": "modal value of vehicle_count_near_intersection across all ticks"
+      },
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Modal count across trace: 0 NPC vehicle(s) are near the intersection."
+    },
+    {
+      "claim_id": "claim_011",
+      "claim_type": "count",
+      "subject": "walker",
+      "predicate": "count",
+      "object": null,
+      "property_value": {
+        "value": 0,
+        "scope": "near_intersection",
+        "definition": "modal value of pedestrian_count_near_intersection across all ticks"
+      },
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Modal count across trace: 0 pedestrian(s) are near the intersection."
+    },
+    {
+      "claim_id": "claim_012",
+      "claim_type": "count",
+      "subject": "emergency",
+      "predicate": "count",
+      "object": null,
+      "property_value": {
+        "value": 0,
+        "scope": "entire_scene",
+        "definition": "modal value of emergency_vehicle_count across all ticks"
+      },
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Modal count across trace: 0 emergency vehicle(s) are present."
+    },
+    {
+      "claim_id": "claim_013",
+      "claim_type": "attribute",
+      "subject": "1921",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 8.54,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1921 reached a maximum speed of 8.54 m/s."
+    },
+    {
+      "claim_id": "claim_014",
+      "claim_type": "attribute",
+      "subject": "1928",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 1928 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_015",
+      "claim_type": "attribute",
+      "subject": "1928",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 9.31,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1928 reached a maximum speed of 9.31 m/s."
+    },
+    {
+      "claim_id": "claim_016",
+      "claim_type": "attribute",
+      "subject": "1929",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 1929 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_017",
+      "claim_type": "attribute",
+      "subject": "1929",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 6.22,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1929 reached a maximum speed of 6.22 m/s."
+    },
+    {
+      "claim_id": "claim_018",
+      "claim_type": "attribute",
+      "subject": "1930",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 1930 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_019",
+      "claim_type": "attribute",
+      "subject": "1930",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 8.29,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1930 reached a maximum speed of 8.29 m/s."
+    },
+    {
+      "claim_id": "claim_020",
+      "claim_type": "attribute",
+      "subject": "1931",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 1931 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_021",
+      "claim_type": "attribute",
+      "subject": "1931",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 9.62,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1931 reached a maximum speed of 9.62 m/s."
+    },
+    {
+      "claim_id": "claim_022",
+      "claim_type": "attribute",
+      "subject": "1932",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 1.4,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1932 reached a maximum speed of 1.40 m/s."
+    },
+    {
+      "claim_id": "claim_023",
+      "claim_type": "attribute",
+      "subject": "1933",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 1.4,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1933 reached a maximum speed of 1.40 m/s."
+    },
+    {
+      "claim_id": "claim_024",
+      "claim_type": "attribute",
+      "subject": "1934",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 6.06,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1934 reached a maximum speed of 6.06 m/s."
+    },
+    {
+      "claim_id": "claim_025",
+      "claim_type": "spatial_relation",
+      "subject": "ego",
+      "predicate": "minimum_distance",
+      "object": "npc_vehicle",
+      "property_value": 104.82,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Ego vehicle's minimum distance to an NPC was 104.82 meters."
+    },
+    {
+      "claim_id": "claim_026",
+      "claim_type": "event",
+      "subject": "ego",
+      "predicate": "collision",
+      "object": null,
+      "time": {
+        "type": "interval",
+        "start": 0,
+        "end": 19.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "A collision event involving the ego vehicle occurred."
+    },
+    {
+      "claim_id": "claim_027",
+      "claim_type": "event",
+      "subject": "1921",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1921 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_028",
+      "claim_type": "event",
+      "subject": "1921",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1921 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_029",
+      "claim_type": "event",
+      "subject": "1928",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1928 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_030",
+      "claim_type": "event",
+      "subject": "1928",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1928 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_031",
+      "claim_type": "event",
+      "subject": "1929",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1929 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_032",
+      "claim_type": "event",
+      "subject": "1929",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1929 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_033",
+      "claim_type": "event",
+      "subject": "1930",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1930 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_034",
+      "claim_type": "event",
+      "subject": "1930",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1930 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_035",
+      "claim_type": "event",
+      "subject": "1931",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1931 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_036",
+      "claim_type": "event",
+      "subject": "1931",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1931 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_037",
+      "claim_type": "event",
+      "subject": "1932",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1932 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_038",
+      "claim_type": "event",
+      "subject": "1932",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1932 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_039",
+      "claim_type": "event",
+      "subject": "1933",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1933 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_040",
+      "claim_type": "event",
+      "subject": "1933",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1933 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_041",
+      "claim_type": "event",
+      "subject": "1934",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1934 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_042",
+      "claim_type": "event",
+      "subject": "1934",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1934 exited the tracked scene."
+    }
+  ]
+}
