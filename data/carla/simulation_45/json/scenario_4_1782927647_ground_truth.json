@@ -1,0 +1,428 @@
+{
+  "scene_id": "scenario_4_1782927647",
+  "source": "carla_groundtruth",
+  "metadata": {
+    "stopped_definition": "speed < 0.5 m/s for at least 5 consecutive ticks",
+    "missing_stopped_means": "not asserted (not false); absence does not imply the actor was moving",
+    "count_definition": "modal value across all ticks unless otherwise scoped",
+    "missing_count_means": "no count claim is generated for vehicle_count_near_intersection, pedestrian_count_near_intersection, or emergency_vehicle_count when the source log's schema never wrote that field; absence of the claim does not mean the count was zero",
+    "boundary_event": "true when actor was present at the first or last tick of the clip; true entry/exit may fall outside the trace window",
+    "tick_to_seconds": "tick index multiplied by fixed_delta_seconds"
+  },
+  "scenario_config": {},
+  "entities": [
+    {
+      "local_id": "300",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "301",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "302",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "303",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "304",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "intersection_468",
+      "type": "intersection"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_001",
+      "claim_type": "object_presence",
+      "subject": "300",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 300 is present in the scene."
+    },
+    {
+      "claim_id": "claim_002",
+      "claim_type": "object_presence",
+      "subject": "301",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 301 is present in the scene."
+    },
+    {
+      "claim_id": "claim_003",
+      "claim_type": "object_presence",
+      "subject": "302",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 302 is present in the scene."
+    },
+    {
+      "claim_id": "claim_004",
+      "claim_type": "object_presence",
+      "subject": "303",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 303 is present in the scene."
+    },
+    {
+      "claim_id": "claim_005",
+      "claim_type": "object_presence",
+      "subject": "304",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 304 is present in the scene."
+    },
+    {
+      "claim_id": "claim_006",
+      "claim_type": "object_presence",
+      "subject": "intersection_468",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "The intersection is present in the scene."
+    },
+    {
+      "claim_id": "claim_007",
+      "claim_type": "attribute",
+      "subject": "300",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 300 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_008",
+      "claim_type": "attribute",
+      "subject": "300",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 300 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_009",
+      "claim_type": "attribute",
+      "subject": "301",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 301 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_010",
+      "claim_type": "attribute",
+      "subject": "301",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 301 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_011",
+      "claim_type": "attribute",
+      "subject": "302",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 302 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_012",
+      "claim_type": "attribute",
+      "subject": "302",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 302 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_013",
+      "claim_type": "attribute",
+      "subject": "303",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 303 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_014",
+      "claim_type": "attribute",
+      "subject": "303",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 303 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_015",
+      "claim_type": "attribute",
+      "subject": "304",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 304 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_016",
+      "claim_type": "spatial_relation",
+      "subject": "walker",
+      "predicate": "occupies",
+      "object": "crosswalk",
+      "property_value": null,
+      "time": {
+        "type": "interval",
+        "start": 0,
+        "end": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "A pedestrian occupied the crosswalk at some point."
+    },
+    {
+      "claim_id": "claim_017",
+      "claim_type": "event",
+      "subject": "300",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 300 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_018",
+      "claim_type": "event",
+      "subject": "300",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 300 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_019",
+      "claim_type": "event",
+      "subject": "301",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 301 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_020",
+      "claim_type": "event",
+      "subject": "301",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 301 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_021",
+      "claim_type": "event",
+      "subject": "302",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 302 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_022",
+      "claim_type": "event",
+      "subject": "302",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 302 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_023",
+      "claim_type": "event",
+      "subject": "303",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 303 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_024",
+      "claim_type": "event",
+      "subject": "303",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 303 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_025",
+      "claim_type": "event",
+      "subject": "304",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 304 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_026",
+      "claim_type": "event",
+      "subject": "304",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 304 exited the tracked scene."
+    }
+  ]
+}
