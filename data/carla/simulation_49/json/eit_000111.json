@@ -1,1 +1,0 @@
-{"input_timestamp_ms": 11100, "timestamp_ms": 11100, "detected_objects": [{"box": [269, 161, 330, 222], "class_id": 0, "class_name": "car", "confidence": 1.0, "track_id": 1921}], "metrics": {"backend": "carla_groundtruth", "inference_ms": 0.0, "actor_count": 1}}

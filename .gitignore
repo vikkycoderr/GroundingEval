@@ -9,7 +9,6 @@ data/*
 data/carla/*
 !data/carla/.gitkeep
 !data/carla/simulation_45/
-!data/carla/simulation_49/
 !data/smartroom/
 data/smartroom/*
 !data/smartroom/.gitkeep
