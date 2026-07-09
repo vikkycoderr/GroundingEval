@@ -1,0 +1,808 @@
+{
+  "scene_id": "scenario_4_1783605189",
+  "source": "carla_groundtruth",
+  "metadata": {
+    "stopped_definition": "speed < 0.5 m/s for at least 5 consecutive ticks",
+    "missing_stopped_means": "not asserted (not false); absence does not imply the actor was moving",
+    "count_definition": "modal value across all ticks unless otherwise scoped",
+    "missing_count_means": "no count claim is generated for vehicle_count_near_intersection, pedestrian_count_near_intersection, or emergency_vehicle_count when the source log's schema never wrote that field; absence of the claim does not mean the count was zero",
+    "boundary_event": "true when actor was present at the first or last tick of the clip; true entry/exit may fall outside the trace window",
+    "tick_to_seconds": "tick index multiplied by fixed_delta_seconds"
+  },
+  "scenario_config": {},
+  "entities": [
+    {
+      "local_id": "1995",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "1996",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "1997",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "1998",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "1999",
+      "type": "walker",
+      "name": "walker.pedestrian.0022"
+    },
+    {
+      "local_id": "intersection_468",
+      "type": "intersection"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_001",
+      "claim_type": "object_presence",
+      "subject": "1995",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1995 is present in the scene."
+    },
+    {
+      "claim_id": "claim_002",
+      "claim_type": "object_presence",
+      "subject": "1996",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1996 is present in the scene."
+    },
+    {
+      "claim_id": "claim_003",
+      "claim_type": "object_presence",
+      "subject": "1997",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1997 is present in the scene."
+    },
+    {
+      "claim_id": "claim_004",
+      "claim_type": "object_presence",
+      "subject": "1998",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1998 is present in the scene."
+    },
+    {
+      "claim_id": "claim_005",
+      "claim_type": "object_presence",
+      "subject": "1999",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1999 is present in the scene."
+    },
+    {
+      "claim_id": "claim_006",
+      "claim_type": "object_presence",
+      "subject": "intersection_468",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "The intersection is present in the scene."
+    },
+    {
+      "claim_id": "claim_007",
+      "claim_type": "count",
+      "subject": "walker",
+      "predicate": "max_occupancy",
+      "object": null,
+      "property_value": {
+        "value": 5,
+        "scope": "entire_scene",
+        "definition": "peak simultaneous count with an active trajectory (first_tick..last_tick) across the trace"
+      },
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "At most 5 walker(s) were simultaneously present in the trace."
+    },
+    {
+      "claim_id": "claim_008",
+      "claim_type": "attribute",
+      "subject": "1995",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1995 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_009",
+      "claim_type": "attribute",
+      "subject": "1995",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1995 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_010",
+      "claim_type": "attribute",
+      "subject": "1996",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1996 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_011",
+      "claim_type": "attribute",
+      "subject": "1996",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1996 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_012",
+      "claim_type": "attribute",
+      "subject": "1997",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1997 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_013",
+      "claim_type": "attribute",
+      "subject": "1997",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1997 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_014",
+      "claim_type": "attribute",
+      "subject": "1998",
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1998 was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_015",
+      "claim_type": "attribute",
+      "subject": "1998",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1998 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_016",
+      "claim_type": "attribute",
+      "subject": "1999",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1999 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_017",
+      "claim_type": "attribute",
+      "subject": "1995",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -41.84,
+        "y": 117.3,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1995 was at (-41.84, 117.3) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_018",
+      "claim_type": "attribute",
+      "subject": "1995",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -56.11,
+        "y": 117.3,
+        "z": 0.96
+      },
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1995 was at (-56.11, 117.3) at last appearance (t=19.2s)."
+    },
+    {
+      "claim_id": "claim_019",
+      "claim_type": "attribute",
+      "subject": "1996",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -41.42,
+        "y": 117.9,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1996 was at (-41.42, 117.9) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_020",
+      "claim_type": "attribute",
+      "subject": "1996",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -56.13,
+        "y": 117.9,
+        "z": 0.96
+      },
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1996 was at (-56.13, 117.9) at last appearance (t=19.2s)."
+    },
+    {
+      "claim_id": "claim_021",
+      "claim_type": "attribute",
+      "subject": "1997",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -41.01,
+        "y": 118.5,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1997 was at (-41.01, 118.5) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_022",
+      "claim_type": "attribute",
+      "subject": "1997",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -56.13,
+        "y": 118.5,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1997 was at (-56.13, 118.5) at last appearance (t=19.2s)."
+    },
+    {
+      "claim_id": "claim_023",
+      "claim_type": "attribute",
+      "subject": "1998",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -40.59,
+        "y": 119.1,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1998 was at (-40.59, 119.1) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_024",
+      "claim_type": "attribute",
+      "subject": "1998",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -56.13,
+        "y": 119.1,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1998 was at (-56.13, 119.1) at last appearance (t=19.2s)."
+    },
+    {
+      "claim_id": "claim_025",
+      "claim_type": "attribute",
+      "subject": "1999",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -40.18,
+        "y": 119.7,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1999 was at (-40.18, 119.7) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_026",
+      "claim_type": "attribute",
+      "subject": "1999",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -56.11,
+        "y": 119.7,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1999 was at (-56.11, 119.7) at last appearance (t=19.2s)."
+    },
+    {
+      "claim_id": "claim_027",
+      "claim_type": "attribute",
+      "subject": "1995",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.584, 'mean_min_knee_angle_deg': 143.4}",
+      "natural_language": "Pedestrian 1995 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_028",
+      "claim_type": "attribute",
+      "subject": "1996",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.584, 'mean_min_knee_angle_deg': 142.6}",
+      "natural_language": "Pedestrian 1996 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_029",
+      "claim_type": "attribute",
+      "subject": "1997",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.584, 'mean_min_knee_angle_deg': 142.0}",
+      "natural_language": "Pedestrian 1997 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_030",
+      "claim_type": "attribute",
+      "subject": "1998",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.584, 'mean_min_knee_angle_deg': 141.5}",
+      "natural_language": "Pedestrian 1998 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_031",
+      "claim_type": "attribute",
+      "subject": "1999",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.584, 'mean_min_knee_angle_deg': 140.9}",
+      "natural_language": "Pedestrian 1999 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_032",
+      "claim_type": "spatial_relation",
+      "subject": "1995",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 193,
+        "total_ticks": 193,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1995 occupied the crosswalk for 100% of the clip (193/193 ticks)."
+    },
+    {
+      "claim_id": "claim_033",
+      "claim_type": "spatial_relation",
+      "subject": "1996",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 193,
+        "total_ticks": 193,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1996 occupied the crosswalk for 100% of the clip (193/193 ticks)."
+    },
+    {
+      "claim_id": "claim_034",
+      "claim_type": "spatial_relation",
+      "subject": "1997",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 193,
+        "total_ticks": 193,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1997 occupied the crosswalk for 100% of the clip (193/193 ticks)."
+    },
+    {
+      "claim_id": "claim_035",
+      "claim_type": "spatial_relation",
+      "subject": "1998",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 193,
+        "total_ticks": 193,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1998 occupied the crosswalk for 100% of the clip (193/193 ticks)."
+    },
+    {
+      "claim_id": "claim_036",
+      "claim_type": "spatial_relation",
+      "subject": "1999",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 193,
+        "total_ticks": 193,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 1999 occupied the crosswalk for 100% of the clip (193/193 ticks)."
+    },
+    {
+      "claim_id": "claim_037",
+      "claim_type": "event",
+      "subject": "1995",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1995 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_038",
+      "claim_type": "event",
+      "subject": "1995",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1995 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_039",
+      "claim_type": "event",
+      "subject": "1996",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1996 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_040",
+      "claim_type": "event",
+      "subject": "1996",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1996 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_041",
+      "claim_type": "event",
+      "subject": "1997",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1997 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_042",
+      "claim_type": "event",
+      "subject": "1997",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1997 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_043",
+      "claim_type": "event",
+      "subject": "1998",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1998 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_044",
+      "claim_type": "event",
+      "subject": "1998",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1998 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_045",
+      "claim_type": "event",
+      "subject": "1999",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1999 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_046",
+      "claim_type": "event",
+      "subject": "1999",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 19.2
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 1999 exited the tracked scene."
+    }
+  ]
+}
