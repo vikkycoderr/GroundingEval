@@ -11,6 +11,7 @@ data/carla/*
 !data/carla/simulation_45/
 !data/carla/simulation_50/
 !data/carla/simulation_51/
+!data/carla/simulation_52/
 !data/smartroom/
 data/smartroom/*
 !data/smartroom/.gitkeep
@@ -22,6 +23,7 @@ data/smartroom/*
 !data/carla/simulation_45/simulation_45.mp4
 !data/carla/simulation_50/simulation_50.mp4
 !data/carla/simulation_51/simulation_51.mp4
+!data/carla/simulation_52/simulation_52.mp4
 
 # Python cache
 __pycache__/
