@@ -1,0 +1,2927 @@
+{
+  "scene_id": "scenario_4_1784216500",
+  "schema_version": "0.1.0",
+  "source": "simulated",
+  "source_detail": {
+    "simulator": "CARLA 0.9.16",
+    "map": "Carla/Maps/Town10HD",
+    "trace_id": "scenario_4_1784216500",
+    "seed": null,
+    "code_commit": "bbb9d5b29719e24390aeafe7cd2afeba996a1ef6",
+    "sensor_rig": [
+      "sensor.camera.rgb",
+      "sensor.camera.semantic_segmentation",
+      "sensor.camera.instance_segmentation"
+    ]
+  },
+  "timestamp_range": [
+    "0.0",
+    "19.2"
+  ],
+  "zones": [
+    {
+      "id": "crosswalk_j468",
+      "type": "crosswalk",
+      "geometry": {
+        "kind": "polygon",
+        "frame": "world",
+        "points": [
+          [
+            -37.7,
+            117.3
+          ],
+          [
+            -37.6,
+            119.8
+          ],
+          [
+            -56.4,
+            119.7
+          ],
+          [
+            -55.8,
+            117.2
+          ]
+        ]
+      }
+    }
+  ],
+  "frames": [
+    {
+      "frame_id": 0,
+      "timestamp": "0.0",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -41.83823013305664,
+            "y": 117.29999542236328,
+            "z": 0.9514545202255249
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -41.423240661621094,
+            "y": 117.89999389648438,
+            "z": 0.9514259099960327
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -41.00825119018555,
+            "y": 118.5,
+            "z": 0.9514291882514954
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -40.593257904052734,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -40.17826843261719,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_47",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_47.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_48.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_49.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 2.19m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.92m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 2.19m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 169,
+      "timestamp": "16.9",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -55.86490249633789,
+            "y": 117.29999542236328,
+            "z": 0.9521533250808716
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.44990921020508,
+            "y": 117.89999389648438,
+            "z": 0.9514259099960327
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.03491973876953,
+            "y": 118.5,
+            "z": 0.9514291882514954
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -54.619930267333984,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -54.20494079589844,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_48",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_48.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_49.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 2.19m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.92m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 2.19m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 172,
+      "timestamp": "17.2",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -56.109031677246094,
+            "y": 117.30059051513672,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.7328116877227869
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.69890594482422,
+            "y": 117.89999389648438,
+            "z": 0.9514259099960327
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.28391647338867,
+            "y": 118.5,
+            "z": 0.9514291882514954
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -54.86892318725586,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -54.45393371582031,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_48",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_48.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_49.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_48",
+          "derivation": "distance(actor_47, actor_48) decreased 0.7295m -> 0.7263m between tick 171 and 172 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_49",
+          "derivation": "distance(actor_47, actor_49) decreased 1.4591m -> 1.4558m between tick 171 and 172 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 2.19m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_47, actor_50) decreased 2.1886m -> 2.1853m between tick 171 and 172 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.91m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.9181m -> 2.9149m between tick 171 and 172 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 2.19m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 173,
+      "timestamp": "17.3",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.11205291748047,
+            "y": 117.30204010009766,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.78190231323242,
+            "y": 117.89999389648438,
+            "z": 0.9514259099960327
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.366912841796875,
+            "y": 118.5,
+            "z": 0.9514291882514954
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -54.95192337036133,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -54.53693389892578,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_48",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_48.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_49.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.68m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_48",
+          "derivation": "distance(actor_47, actor_48) decreased 0.7263m -> 0.6830m between tick 172 and 173 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.41m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_49",
+          "derivation": "distance(actor_47, actor_49) decreased 1.4558m -> 1.4108m between tick 172 and 173 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 2.14m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_47, actor_50) decreased 2.1853m -> 2.1398m between tick 172 and 173 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.87m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.9149m -> 2.8690m between tick 172 and 173 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 2.19m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 176,
+      "timestamp": "17.6",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.11205291748047,
+            "y": 117.30204010009766,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -56.03089904785156,
+            "y": 117.89999389648438,
+            "z": 0.9534940719604492
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.61590576171875,
+            "y": 118.5,
+            "z": 0.9514291882514954
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.2009162902832,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -54.785926818847656,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_49",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_49.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_48",
+          "derivation": "distance(actor_47, actor_48) decreased 0.6201m -> 0.6034m between tick 175 and 176 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.30m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_49",
+          "derivation": "distance(actor_47, actor_49) decreased 1.3306m -> 1.2966m between tick 175 and 176 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 2.02m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_47, actor_50) decreased 2.0545m -> 2.0156m between tick 175 and 176 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.74m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.7813m -> 2.7402m between tick 175 and 176 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 2.19m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 178,
+      "timestamp": "17.8",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.11205291748047,
+            "y": 117.30204010009766,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 117.89999389648438,
+            "z": 0.9552064538002014
+          },
+          "velocity": {
+            "speed": 0.10488280653953552
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.78190231323242,
+            "y": 118.5,
+            "z": 0.9514291882514954
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.366912841796875,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -54.95192337036133,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_49",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_49.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.24m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_49",
+          "derivation": "distance(actor_47, actor_49) decreased 1.2672m -> 1.2426m between tick 177 and 178 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 1.95m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_47, actor_50) decreased 1.9795m -> 1.9462m between tick 177 and 178 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.66m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.7010m -> 2.6639m between tick 177 and 178 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.70m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_49",
+          "derivation": "distance(actor_48, actor_49) decreased 0.7295m -> 0.6957m between tick 177 and 178 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.42m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_48, actor_50) decreased 1.4591m -> 1.4242m between tick 177 and 178 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 2.15m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_48, actor_51) decreased 2.1886m -> 2.1534m between tick 177 and 178 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 179,
+      "timestamp": "17.9",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.11205291748047,
+            "y": 117.30204010009766,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 117.89999389648438,
+            "z": 0.9552064538002014
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.86490249633789,
+            "y": 118.5,
+            "z": 0.9514291882514954
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.44990921020508,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.03491973876953,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_49",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_49.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.22m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_49",
+          "derivation": "distance(actor_47, actor_49) decreased 1.2426m -> 1.2232m between tick 178 and 179 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 1.92m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_47, actor_50) decreased 1.9462m -> 1.9160m between tick 178 and 179 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.63m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.6639m -> 2.6288m between tick 178 and 179 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.66m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_49",
+          "derivation": "distance(actor_48, actor_49) decreased 0.6957m -> 0.6576m between tick 178 and 179 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.38m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_48, actor_50) decreased 1.4242m -> 1.3813m between tick 178 and 179 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 2.11m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_48, actor_51) decreased 2.1534m -> 2.1090m between tick 178 and 179 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 182,
+      "timestamp": "18.2",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.11205291748047,
+            "y": 117.30204010009766,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 117.89999389648438,
+            "z": 0.9552064538002014
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -56.113895416259766,
+            "y": 118.5,
+            "z": 0.9521044492721558
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.69890594482422,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.28391647338867,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.20m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_49",
+          "derivation": "distance(actor_47, actor_49) decreased 1.2007m -> 1.1980m between tick 181 and 182 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 1.84m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_47, actor_50) decreased 1.8652m -> 1.8448m between tick 181 and 182 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.54m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.5652m -> 2.5369m between tick 181 and 182 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_49",
+          "derivation": "distance(actor_48, actor_49) decreased 0.6088m -> 0.6003m between tick 181 and 182 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.28m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_48, actor_50) decreased 1.3071m -> 1.2764m between tick 181 and 182 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 1.99m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_48, actor_51) decreased 2.0275m -> 1.9906m between tick 181 and 182 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.73m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.46m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 183,
+      "timestamp": "18.3",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.11205291748047,
+            "y": 117.30204010009766,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 117.89999389648438,
+            "z": 0.9552064538002014
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 118.5,
+            "z": 0.9524312615394592
+          },
+          "velocity": {
+            "speed": 0.10488280653953552
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.78190231323242,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.366912841796875,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.20m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 1.83m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_47, actor_50) decreased 1.8448m -> 1.8280m between tick 182 and 183 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.51m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.5369m -> 2.5111m between tick 182 and 183 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.25m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_48, actor_50) decreased 1.2764m -> 1.2506m between tick 182 and 183 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 1.96m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_48, actor_51) decreased 1.9906m -> 1.9566m between tick 182 and 183 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.70m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_49, actor_50) decreased 0.7295m -> 0.6957m between tick 182 and 183 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.42m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_49, actor_51) decreased 1.4591m -> 1.4242m between tick 182 and 183 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 184,
+      "timestamp": "18.4",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.11205291748047,
+            "y": 117.30204010009766,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 117.89999389648438,
+            "z": 0.9552064538002014
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 118.5,
+            "z": 0.9524312615394592
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.86490249633789,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.44990921020508,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.20m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 1.81m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_47, actor_50) decreased 1.8280m -> 1.8149m between tick 183 and 184 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.49m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.5111m -> 2.4877m between tick 183 and 184 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.23m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_48, actor_50) decreased 1.2506m -> 1.2298m between tick 183 and 184 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 1.93m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_48, actor_51) decreased 1.9566m -> 1.9256m between tick 183 and 184 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.66m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "approaching",
+          "object": "actor_50",
+          "derivation": "distance(actor_49, actor_50) decreased 0.6957m -> 0.6576m between tick 183 and 184 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.38m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_49, actor_51) decreased 1.4242m -> 1.3813m between tick 183 and 184 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.73m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 188,
+      "timestamp": "18.8",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.11205291748047,
+            "y": 117.30204010009766,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 117.89999389648438,
+            "z": 0.9552064538002014
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 118.5,
+            "z": 0.9524312615394592
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -56.13397979736328,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.10488280653953552
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.78190231323242,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.20m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 1.80m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.42m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.4333m -> 2.4206m between tick 187 and 188 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.20m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 1.83m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_48, actor_51) decreased 1.8518m -> 1.8341m between tick 187 and 188 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.25m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_49, actor_51) decreased 1.2764m -> 1.2506m between tick 187 and 188 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.70m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_50, actor_51) decreased 0.7295m -> 0.6957m between tick 187 and 188 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 189,
+      "timestamp": "18.9",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_47",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.11205291748047,
+            "y": 117.30204010009766,
+            "z": 0.9562628865242004
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_48",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 117.89999389648438,
+            "z": 0.9552064538002014
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_49",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": null,
+          "position": {
+            "x": -56.13397979736328,
+            "y": 118.5,
+            "z": 0.9524312615394592
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_50",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "stationary",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -56.13397979736328,
+            "y": 119.0999984741211,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.0
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_51",
+          "type": "person",
+          "subtype": "walker.pedestrian.0022",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -55.86490249633789,
+            "y": 119.69999694824219,
+            "z": 0.9514999985694885
+          },
+          "velocity": {
+            "speed": 0.8299804329872131
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_50",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_50.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_51",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_51.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_48",
+          "derivation": "distance(actor_47.position, actor_48.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_47.position, actor_49.position) = 1.20m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_47.position, actor_50.position) = 1.80m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_47.position, actor_51.position) = 2.41m < 5.0m"
+        },
+        {
+          "subject": "actor_47",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_47, actor_51) decreased 2.4206m -> 2.4107m between tick 188 and 189 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_49",
+          "derivation": "distance(actor_48.position, actor_49.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_48.position, actor_50.position) = 1.20m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_48.position, actor_51.position) = 1.82m < 5.0m"
+        },
+        {
+          "subject": "actor_48",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_48, actor_51) decreased 1.8341m -> 1.8200m between tick 188 and 189 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_50",
+          "derivation": "distance(actor_49.position, actor_50.position) = 0.60m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_49.position, actor_51.position) = 1.23m < 5.0m"
+        },
+        {
+          "subject": "actor_49",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_49, actor_51) decreased 1.2506m -> 1.2298m between tick 188 and 189 (> 0.001m noise floor)"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "near",
+          "object": "actor_51",
+          "derivation": "distance(actor_50.position, actor_51.position) = 0.66m < 5.0m"
+        },
+        {
+          "subject": "actor_50",
+          "predicate": "approaching",
+          "object": "actor_51",
+          "derivation": "distance(actor_50, actor_51) decreased 0.6957m -> 0.6576m between tick 188 and 189 (> 0.001m noise floor)"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_id": "evt_001",
+      "subject": "actor_47",
+      "predicate": "exited",
+      "object": "crosswalk_j468",
+      "time": {
+        "type": "point",
+        "start": "16.9",
+        "end": null,
+        "start_frame": 169,
+        "end_frame": null
+      },
+      "derivation": "actor_47.location changed crosswalk_j468 -> None between frame 0 and 169"
+    },
+    {
+      "event_id": "evt_002",
+      "subject": "actor_48",
+      "predicate": "exited",
+      "object": "crosswalk_j468",
+      "time": {
+        "type": "point",
+        "start": "17.6",
+        "end": null,
+        "start_frame": 176,
+        "end_frame": null
+      },
+      "derivation": "actor_48.location changed crosswalk_j468 -> None between frame 173 and 176"
+    },
+    {
+      "event_id": "evt_003",
+      "subject": "actor_49",
+      "predicate": "exited",
+      "object": "crosswalk_j468",
+      "time": {
+        "type": "point",
+        "start": "18.2",
+        "end": null,
+        "start_frame": 182,
+        "end_frame": null
+      },
+      "derivation": "actor_49.location changed crosswalk_j468 -> None between frame 179 and 182"
+    }
+  ]
+}
