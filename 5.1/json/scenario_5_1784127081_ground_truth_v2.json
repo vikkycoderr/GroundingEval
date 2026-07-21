@@ -1,0 +1,1392 @@
+{
+  "scene_id": "scenario_5_1784127081",
+  "schema_version": "0.1.0",
+  "source": "simulated",
+  "source_detail": {
+    "simulator": "CARLA 0.9.16",
+    "map": "Carla/Maps/Town10HD",
+    "trace_id": "scenario_5_1784127081",
+    "seed": null,
+    "code_commit": "c8a1b129d66ff4a9c6570ff51078c93a5ab29e29",
+    "sensor_rig": [
+      "sensor.camera.rgb",
+      "sensor.camera.semantic_segmentation",
+      "sensor.camera.instance_segmentation"
+    ]
+  },
+  "timestamp_range": [
+    "0.0",
+    "19.9"
+  ],
+  "zones": [
+    {
+      "id": "crosswalk_j468",
+      "type": "crosswalk",
+      "geometry": {
+        "kind": "polygon",
+        "frame": "world",
+        "points": [
+          [
+            -37.7,
+            117.3
+          ],
+          [
+            -37.6,
+            119.8
+          ],
+          [
+            -56.4,
+            119.7
+          ],
+          [
+            -55.8,
+            117.2
+          ]
+        ]
+      }
+    }
+  ],
+  "frames": [
+    {
+      "frame_id": 0,
+      "timestamp": "0.0",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -51.97296142578125,
+            "y": 112.1917724609375,
+            "z": -0.006257591303437948
+          },
+          "velocity": {
+            "speed": 7.701162977738702
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -70.880859375,
+            "y": 132.19313049316406,
+            "z": -0.0015607451787218451
+          },
+          "velocity": {
+            "speed": 7.8794002241899594
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": []
+    },
+    {
+      "frame_id": 1,
+      "timestamp": "0.1",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -51.95242691040039,
+            "y": 112.98780822753906,
+            "z": -0.006459159776568413
+          },
+          "velocity": {
+            "speed": 7.9751125162965355
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -70.09207153320312,
+            "y": 132.16177368164062,
+            "z": -0.0014762114733457565
+          },
+          "velocity": {
+            "speed": 7.990446108528961
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 27.5239m -> 26.3948m between tick 0 and 1 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 7,
+      "timestamp": "0.7",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": "crosswalk_j468",
+          "position": {
+            "x": -51.82283020019531,
+            "y": 117.7702865600586,
+            "z": -0.007982330396771431
+          },
+          "velocity": {
+            "speed": 7.990019364290046
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -65.35771942138672,
+            "y": 131.97369384765625,
+            "z": -0.001269111642614007
+          },
+          "velocity": {
+            "speed": 7.993561488539225
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "on",
+          "object": "crosswalk_j468",
+          "derivation": "point_in_polygon(actor_470.position, crosswalk_j468.geometry)"
+        },
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 20.7484m -> 19.6196m between tick 6 and 7 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 10,
+      "timestamp": "1.0",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -51.76085662841797,
+            "y": 120.15719604492188,
+            "z": -0.00773212406784296
+          },
+          "velocity": {
+            "speed": 7.989556864116088
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -62.990604400634766,
+            "y": 131.879638671875,
+            "z": -0.0012441634899005294
+          },
+          "velocity": {
+            "speed": 7.993559147954989
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 17.3621m -> 16.2334m between tick 9 and 10 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 20,
+      "timestamp": "2.0",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -51.55419158935547,
+            "y": 128.1137237548828,
+            "z": -0.0075922394171357155
+          },
+          "velocity": {
+            "speed": 7.989562444641569
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -55.100223541259766,
+            "y": 131.566162109375,
+            "z": -0.001226348802447319
+          },
+          "velocity": {
+            "speed": 7.993561184618503
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "near",
+          "object": "actor_471",
+          "derivation": "distance(actor_470.position, actor_471.position) = 4.95m < 5.0m"
+        },
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 6.0768m -> 4.9491m between tick 19 and 20 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 26,
+      "timestamp": "2.6",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -49.89922332763672,
+            "y": 131.3617401123047,
+            "z": 0.10624980926513672
+          },
+          "velocity": {
+            "speed": 7.454445307214136
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -51.55907440185547,
+            "y": 132.50537109375,
+            "z": 0.001429328927770257
+          },
+          "velocity": {
+            "speed": 4.960454763818678
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "near",
+          "object": "actor_471",
+          "derivation": "distance(actor_470.position, actor_471.position) = 2.02m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 27,
+      "timestamp": "2.7",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -49.37174606323242,
+            "y": 131.81112670898438,
+            "z": 0.10474441200494766
+          },
+          "velocity": {
+            "speed": 6.932254154057233
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -51.07814025878906,
+            "y": 132.7198944091797,
+            "z": -0.010487937368452549
+          },
+          "velocity": {
+            "speed": 5.0286915950851
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "near",
+          "object": "actor_471",
+          "derivation": "distance(actor_470.position, actor_471.position) = 1.93m < 5.0m"
+        },
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 2.0157m -> 1.9333m between tick 26 and 27 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 28,
+      "timestamp": "2.8",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -48.75425720214844,
+            "y": 132.20330810546875,
+            "z": 0.19723425805568695
+          },
+          "velocity": {
+            "speed": 7.960152259873013
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -50.65161895751953,
+            "y": 132.87380981445312,
+            "z": 0.08043532818555832
+          },
+          "velocity": {
+            "speed": 4.218837329018752
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "near",
+          "object": "actor_471",
+          "derivation": "distance(actor_470.position, actor_471.position) = 2.01m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 29,
+      "timestamp": "2.9",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -48.567264556884766,
+            "y": 132.9810028076172,
+            "z": 0.3648039996623993
+          },
+          "velocity": {
+            "speed": 7.686361530185792
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -50.018524169921875,
+            "y": 132.92970275878906,
+            "z": 0.0977645069360733
+          },
+          "velocity": {
+            "speed": 4.9216430933241
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "near",
+          "object": "actor_471",
+          "derivation": "distance(actor_470.position, actor_471.position) = 1.45m < 5.0m"
+        },
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 2.0124m -> 1.4522m between tick 28 and 29 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 31,
+      "timestamp": "3.1",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -47.99095153808594,
+            "y": 134.13731384277344,
+            "z": 0.6483187079429626
+          },
+          "velocity": {
+            "speed": 7.195008136553061
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -48.87421417236328,
+            "y": 133.10414123535156,
+            "z": 0.027645835652947426
+          },
+          "velocity": {
+            "speed": 5.925806841283015
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "near",
+          "object": "actor_471",
+          "derivation": "distance(actor_470.position, actor_471.position) = 1.36m < 5.0m"
+        }
+      ]
+    },
+    {
+      "frame_id": 36,
+      "timestamp": "3.6",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -47.32878875732422,
+            "y": 137.74929809570312,
+            "z": 1.8814929723739624
+          },
+          "velocity": {
+            "speed": 6.4308353207069455
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.52695083618164,
+            "y": 132.56918334960938,
+            "z": 0.004856338258832693
+          },
+          "velocity": {
+            "speed": 7.1049788260961515
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        }
+      ],
+      "relations": []
+    },
+    {
+      "frame_id": 62,
+      "timestamp": "6.2",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.775936126708984,
+            "y": 148.69198608398438,
+            "z": 0.963070273399353
+          },
+          "velocity": {
+            "speed": 0.583561602582057
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -26.39052963256836,
+            "y": 128.9130401611328,
+            "z": -0.0012368775205686688
+          },
+          "velocity": {
+            "speed": 7.35277353707582
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": false,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": []
+          }
+        }
+      ],
+      "relations": []
+    },
+    {
+      "frame_id": 68,
+      "timestamp": "6.8",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.708045959472656,
+            "y": 148.6448516845703,
+            "z": 1.0049728155136108
+          },
+          "velocity": {
+            "speed": 1.4454745197272678
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -22.986574172973633,
+            "y": 128.3943328857422,
+            "z": 0.009676933288574219
+          },
+          "velocity": {
+            "speed": 2.264363729964507
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": false,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": []
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 30.8041m -> 30.4360m between tick 67 and 68 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 69,
+      "timestamp": "6.9",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.71345901489258,
+            "y": 148.7719268798828,
+            "z": 0.9404829144477844
+          },
+          "velocity": {
+            "speed": 0.29219456302247443
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -22.868486404418945,
+            "y": 128.489501953125,
+            "z": 0.01496204361319542
+          },
+          "velocity": {
+            "speed": 2.143347078641273
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": false,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": []
+          }
+        }
+      ],
+      "relations": []
+    },
+    {
+      "frame_id": 70,
+      "timestamp": "7.0",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.64997863769531,
+            "y": 148.67486572265625,
+            "z": 0.9864104986190796
+          },
+          "velocity": {
+            "speed": 0.7806356866367323
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -22.822351455688477,
+            "y": 128.6408233642578,
+            "z": 0.01960369013249874
+          },
+          "velocity": {
+            "speed": 2.2666586529038155
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": false,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": []
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 30.5495m -> 30.3721m between tick 69 and 70 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 71,
+      "timestamp": "7.1",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.677303314208984,
+            "y": 148.7575225830078,
+            "z": 0.9435657858848572
+          },
+          "velocity": {
+            "speed": 0.5184352597083814
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -22.753103256225586,
+            "y": 128.82876586914062,
+            "z": 0.023781737312674522
+          },
+          "velocity": {
+            "speed": 2.466894848883671
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": false,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": []
+          }
+        }
+      ],
+      "relations": []
+    },
+    {
+      "frame_id": 72,
+      "timestamp": "7.2",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.64501953125,
+            "y": 148.69383239746094,
+            "z": 0.9791301488876343
+          },
+          "velocity": {
+            "speed": 0.6299843643259638
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -22.65353775024414,
+            "y": 129.04795837402344,
+            "z": 0.034568022936582565
+          },
+          "velocity": {
+            "speed": 2.68984501117571
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": false,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": []
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 30.3756m -> 30.2418m between tick 71 and 72 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 74,
+      "timestamp": "7.4",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.718231201171875,
+            "y": 148.73020935058594,
+            "z": 0.9656314849853516
+          },
+          "velocity": {
+            "speed": 1.1176147449942622
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -22.34160804748535,
+            "y": 129.33567810058594,
+            "z": 0.02384662628173828
+          },
+          "velocity": {
+            "speed": 2.49852023625765
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": false,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": []
+          }
+        }
+      ],
+      "relations": []
+    },
+    {
+      "frame_id": 75,
+      "timestamp": "7.5",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.72157287597656,
+            "y": 148.70858764648438,
+            "z": 0.9567063450813293
+          },
+          "velocity": {
+            "speed": 0.7915969433978353
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -22.196136474609375,
+            "y": 129.67604064941406,
+            "z": 0.024153174832463264
+          },
+          "velocity": {
+            "speed": 3.3483739441445635
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": false,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": []
+          }
+        }
+      ],
+      "relations": [
+        {
+          "subject": "actor_470",
+          "predicate": "approaching",
+          "object": "actor_471",
+          "derivation": "distance(actor_470, actor_471) decreased 30.3746m -> 30.2603m between tick 74 and 75 (> 0.001m noise floor)"
+        }
+      ]
+    },
+    {
+      "frame_id": 76,
+      "timestamp": "7.6",
+      "conditions": {
+        "fog_density": 2.0,
+        "lighting": null,
+        "precipitation": null
+      },
+      "objects": [
+        {
+          "id": "actor_470",
+          "type": "car",
+          "subtype": "vehicle.audi.a2",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -45.74889373779297,
+            "y": 148.7292022705078,
+            "z": 0.9667283296585083
+          },
+          "velocity": {
+            "speed": 0.45787729331136695
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": true,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": [
+              "cam1"
+            ]
+          }
+        },
+        {
+          "id": "actor_471",
+          "type": "car",
+          "subtype": "vehicle.mercedes.coupe_2020",
+          "state": "moving",
+          "location": null,
+          "position": {
+            "x": -21.760318756103516,
+            "y": 129.88893127441406,
+            "z": 0.02178146317601204
+          },
+          "velocity": {
+            "speed": 3.858961345650273
+          },
+          "attributes": {},
+          "visibility": {
+            "observable": false,
+            "method": "instance_segmentation",
+            "occlusion": null,
+            "visible_in": []
+          }
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "events": [
+    {
+      "event_id": "evt_001",
+      "subject": "actor_470",
+      "predicate": "entered",
+      "object": "crosswalk_j468",
+      "time": {
+        "type": "point",
+        "start": "0.7",
+        "end": null,
+        "start_frame": 7,
+        "end_frame": null
+      },
+      "derivation": "actor_470.location changed None -> crosswalk_j468 between frame 1 and 7"
+    },
+    {
+      "event_id": "evt_002",
+      "subject": "actor_470",
+      "predicate": "exited",
+      "object": "crosswalk_j468",
+      "time": {
+        "type": "point",
+        "start": "1.0",
+        "end": null,
+        "start_frame": 10,
+        "end_frame": null
+      },
+      "derivation": "actor_470.location changed crosswalk_j468 -> None between frame 7 and 10"
+    },
+    {
+      "event_id": "evt_003",
+      "subject": "actor_471",
+      "predicate": "disappeared",
+      "object": null,
+      "time": {
+        "type": "point",
+        "start": "6.2",
+        "end": null,
+        "start_frame": 62,
+        "end_frame": null
+      },
+      "derivation": "actor_471.visibility.observable changed True -> False between frame 36 and 62"
+    }
+  ]
+}
