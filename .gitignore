@@ -28,6 +28,13 @@ data/smartroom/*
 !data/carla/simulation_52/simulation_52.mp4
 !data/carla/[0-9]*.[0-9]*/*.mp4
 
+# export_to_repo.py's <scenario>.<variant> labels (5.1, 4.2, etc.) actually
+# land at the REPO ROOT (confirmed via `find . -maxdepth 2 -iname "5.1"` ->
+# ./5.1), not under data/carla/ like the rule above assumed - that earlier
+# rule never matched anything for this reason, and the blanket *.mp4 rule
+# above was still silently blocking every root-level export's video.
+!/[0-9]*.[0-9]*/*.mp4
+
 # Python cache
 __pycache__/
 *.pyc
