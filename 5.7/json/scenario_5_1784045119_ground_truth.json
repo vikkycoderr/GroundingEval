@@ -1,0 +1,335 @@
+{
+  "scene_id": "scenario_5_1784045119",
+  "source": "carla_groundtruth",
+  "metadata": {
+    "stopped_definition": "speed < 0.5 m/s for at least 5 consecutive ticks",
+    "missing_stopped_means": "not asserted (not false); absence does not imply the actor was moving",
+    "count_definition": "modal value across all ticks unless otherwise scoped",
+    "missing_count_means": "no count claim is generated for vehicle_count_near_intersection, pedestrian_count_near_intersection, or emergency_vehicle_count when the source log's schema never wrote that field; absence of the claim does not mean the count was zero",
+    "boundary_event": "true when actor was present at the first or last tick of the clip; true entry/exit may fall outside the trace window",
+    "tick_to_seconds": "tick index multiplied by fixed_delta_seconds"
+  },
+  "scenario_config": {},
+  "entities": [
+    {
+      "local_id": "399",
+      "type": "npc_vehicle",
+      "name": "vehicle.audi.a2",
+      "spawn_role": "vehicle_a"
+    },
+    {
+      "local_id": "400",
+      "type": "npc_vehicle",
+      "name": "vehicle.mercedes.coupe_2020",
+      "spawn_role": "vehicle_b"
+    },
+    {
+      "local_id": "intersection_468",
+      "type": "intersection"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_001",
+      "claim_type": "object_presence",
+      "subject": "399",
+      "subject_role": "vehicle_a",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 399 is present in the scene."
+    },
+    {
+      "claim_id": "claim_002",
+      "claim_type": "object_presence",
+      "subject": "400",
+      "subject_role": "vehicle_b",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 400 is present in the scene."
+    },
+    {
+      "claim_id": "claim_003",
+      "claim_type": "object_presence",
+      "subject": "intersection_468",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "The intersection is present in the scene."
+    },
+    {
+      "claim_id": "claim_004",
+      "claim_type": "count",
+      "subject": "npc_vehicle",
+      "predicate": "max_occupancy",
+      "object": null,
+      "property_value": {
+        "value": 2,
+        "scope": "entire_scene",
+        "definition": "peak simultaneous count with an active trajectory (first_tick..last_tick) across the trace"
+      },
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "At most 2 npc_vehicle(s) were simultaneously present in the trace."
+    },
+    {
+      "claim_id": "claim_005",
+      "claim_type": "attribute",
+      "subject": "399",
+      "subject_role": "vehicle_a",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 8.06,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 399 reached a maximum speed of 8.06 m/s."
+    },
+    {
+      "claim_id": "claim_006",
+      "claim_type": "attribute",
+      "subject": "400",
+      "subject_role": "vehicle_b",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 7.99,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 400 reached a maximum speed of 7.99 m/s."
+    },
+    {
+      "claim_id": "claim_007",
+      "claim_type": "attribute",
+      "subject": "399",
+      "subject_role": "vehicle_a",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -51.97,
+        "y": 112.19,
+        "z": -0.01
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 399 was at (-51.97, 112.19) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_008",
+      "claim_type": "attribute",
+      "subject": "399",
+      "subject_role": "vehicle_a",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -47.99,
+        "y": 147.65,
+        "z": 2.16
+      },
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 399 was at (-47.99, 147.65) at last appearance (t=5.9s)."
+    },
+    {
+      "claim_id": "claim_009",
+      "claim_type": "attribute",
+      "subject": "400",
+      "subject_role": "vehicle_b",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -70.88,
+        "y": 132.19,
+        "z": -0.0
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 400 was at (-70.88, 132.19) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_010",
+      "claim_type": "attribute",
+      "subject": "400",
+      "subject_role": "vehicle_b",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -28.46,
+        "y": 129.33,
+        "z": -0.0
+      },
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "NPC vehicle 400 was at (-28.46, 129.33) at last appearance (t=5.9s)."
+    },
+    {
+      "claim_id": "claim_011",
+      "claim_type": "event",
+      "subject": "400",
+      "subject_role": "vehicle_b",
+      "predicate": "collision",
+      "object": "399",
+      "object_role": "vehicle_a",
+      "time": {
+        "type": "interval",
+        "start": 2.2,
+        "end": 3.1
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "A collision event occurred between actor 400 and actor 399."
+    },
+    {
+      "claim_id": "claim_012",
+      "claim_type": "attribute",
+      "subject": "399",
+      "subject_role": "vehicle_a",
+      "predicate": "collision_infraction_count_static",
+      "object": null,
+      "property_value": 2,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 399 incurred 2 collision-with-static infraction(s) (2s duration cap per continuous impact)."
+    },
+    {
+      "claim_id": "claim_013",
+      "claim_type": "attribute",
+      "subject": "399",
+      "subject_role": "vehicle_a",
+      "predicate": "collision_infraction_count_vehicle",
+      "object": null,
+      "property_value": 1,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 399 incurred 1 collision-with-vehicle infraction(s) (2s duration cap per continuous impact)."
+    },
+    {
+      "claim_id": "claim_014",
+      "claim_type": "attribute",
+      "subject": "400",
+      "subject_role": "vehicle_b",
+      "predicate": "collision_infraction_count_vehicle",
+      "object": null,
+      "property_value": 1,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 400 incurred 1 collision-with-vehicle infraction(s) (2s duration cap per continuous impact)."
+    },
+    {
+      "claim_id": "claim_015",
+      "claim_type": "event",
+      "subject": "399",
+      "subject_role": "vehicle_a",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 399 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_016",
+      "claim_type": "event",
+      "subject": "399",
+      "subject_role": "vehicle_a",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 399 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_017",
+      "claim_type": "event",
+      "subject": "400",
+      "subject_role": "vehicle_b",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 400 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_018",
+      "claim_type": "event",
+      "subject": "400",
+      "subject_role": "vehicle_b",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 400 exited the tracked scene."
+    }
+  ]
+}

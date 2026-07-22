@@ -1,0 +1,801 @@
+{
+  "scene_id": "scenario_4_1784045192",
+  "source": "carla_groundtruth",
+  "metadata": {
+    "stopped_definition": "speed < 0.5 m/s for at least 5 consecutive ticks",
+    "missing_stopped_means": "not asserted (not false); absence does not imply the actor was moving",
+    "count_definition": "modal value across all ticks unless otherwise scoped",
+    "missing_count_means": "no count claim is generated for vehicle_count_near_intersection, pedestrian_count_near_intersection, or emergency_vehicle_count when the source log's schema never wrote that field; absence of the claim does not mean the count was zero",
+    "boundary_event": "true when actor was present at the first or last tick of the clip; true entry/exit may fall outside the trace window",
+    "tick_to_seconds": "tick index multiplied by fixed_delta_seconds"
+  },
+  "scenario_config": {},
+  "entities": [
+    {
+      "local_id": "436",
+      "type": "walker",
+      "name": "walker.pedestrian.0022",
+      "spawn_role": "walker_1"
+    },
+    {
+      "local_id": "437",
+      "type": "walker",
+      "name": "walker.pedestrian.0022",
+      "spawn_role": "walker_2"
+    },
+    {
+      "local_id": "438",
+      "type": "walker",
+      "name": "walker.pedestrian.0022",
+      "spawn_role": "walker_3"
+    },
+    {
+      "local_id": "439",
+      "type": "walker",
+      "name": "walker.pedestrian.0022",
+      "spawn_role": "walker_4"
+    },
+    {
+      "local_id": "440",
+      "type": "walker",
+      "name": "walker.pedestrian.0022",
+      "spawn_role": "walker_5"
+    },
+    {
+      "local_id": "intersection_468",
+      "type": "intersection"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_001",
+      "claim_type": "object_presence",
+      "subject": "436",
+      "subject_role": "walker_1",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 436 is present in the scene."
+    },
+    {
+      "claim_id": "claim_002",
+      "claim_type": "object_presence",
+      "subject": "437",
+      "subject_role": "walker_2",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 437 is present in the scene."
+    },
+    {
+      "claim_id": "claim_003",
+      "claim_type": "object_presence",
+      "subject": "438",
+      "subject_role": "walker_3",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 438 is present in the scene."
+    },
+    {
+      "claim_id": "claim_004",
+      "claim_type": "object_presence",
+      "subject": "439",
+      "subject_role": "walker_4",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 439 is present in the scene."
+    },
+    {
+      "claim_id": "claim_005",
+      "claim_type": "object_presence",
+      "subject": "440",
+      "subject_role": "walker_5",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 440 is present in the scene."
+    },
+    {
+      "claim_id": "claim_006",
+      "claim_type": "object_presence",
+      "subject": "intersection_468",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "The intersection is present in the scene."
+    },
+    {
+      "claim_id": "claim_007",
+      "claim_type": "count",
+      "subject": "walker",
+      "predicate": "max_occupancy",
+      "object": null,
+      "property_value": {
+        "value": 5,
+        "scope": "entire_scene",
+        "definition": "peak simultaneous count with an active trajectory (first_tick..last_tick) across the trace"
+      },
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "At most 5 walker(s) were simultaneously present in the trace."
+    },
+    {
+      "claim_id": "claim_008",
+      "claim_type": "attribute",
+      "subject": "436",
+      "subject_role": "walker_1",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 436 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_009",
+      "claim_type": "attribute",
+      "subject": "437",
+      "subject_role": "walker_2",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 437 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_010",
+      "claim_type": "attribute",
+      "subject": "438",
+      "subject_role": "walker_3",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 438 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_011",
+      "claim_type": "attribute",
+      "subject": "439",
+      "subject_role": "walker_4",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 439 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_012",
+      "claim_type": "attribute",
+      "subject": "440",
+      "subject_role": "walker_5",
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 0.83,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 440 reached a maximum speed of 0.83 m/s."
+    },
+    {
+      "claim_id": "claim_013",
+      "claim_type": "attribute",
+      "subject": "436",
+      "subject_role": "walker_1",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -41.84,
+        "y": 117.3,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 436 was at (-41.84, 117.3) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_014",
+      "claim_type": "attribute",
+      "subject": "436",
+      "subject_role": "walker_1",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -46.74,
+        "y": 117.3,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 436 was at (-46.74, 117.3) at last appearance (t=5.9s)."
+    },
+    {
+      "claim_id": "claim_015",
+      "claim_type": "attribute",
+      "subject": "437",
+      "subject_role": "walker_2",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -41.42,
+        "y": 117.9,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 437 was at (-41.42, 117.9) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_016",
+      "claim_type": "attribute",
+      "subject": "437",
+      "subject_role": "walker_2",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -46.32,
+        "y": 117.9,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 437 was at (-46.32, 117.9) at last appearance (t=5.9s)."
+    },
+    {
+      "claim_id": "claim_017",
+      "claim_type": "attribute",
+      "subject": "438",
+      "subject_role": "walker_3",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -41.01,
+        "y": 118.5,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 438 was at (-41.01, 118.5) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_018",
+      "claim_type": "attribute",
+      "subject": "438",
+      "subject_role": "walker_3",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -45.91,
+        "y": 118.5,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 438 was at (-45.91, 118.5) at last appearance (t=5.9s)."
+    },
+    {
+      "claim_id": "claim_019",
+      "claim_type": "attribute",
+      "subject": "439",
+      "subject_role": "walker_4",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -40.59,
+        "y": 119.1,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 439 was at (-40.59, 119.1) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_020",
+      "claim_type": "attribute",
+      "subject": "439",
+      "subject_role": "walker_4",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -45.49,
+        "y": 119.1,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 439 was at (-45.49, 119.1) at last appearance (t=5.9s)."
+    },
+    {
+      "claim_id": "claim_021",
+      "claim_type": "attribute",
+      "subject": "440",
+      "subject_role": "walker_5",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -40.18,
+        "y": 119.7,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 440 was at (-40.18, 119.7) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_022",
+      "claim_type": "attribute",
+      "subject": "440",
+      "subject_role": "walker_5",
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -45.08,
+        "y": 119.7,
+        "z": 0.95
+      },
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 440 was at (-45.08, 119.7) at last appearance (t=5.9s)."
+    },
+    {
+      "claim_id": "claim_023",
+      "claim_type": "attribute",
+      "subject": "436",
+      "subject_role": "walker_1",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.582, 'mean_min_knee_angle_deg': 140.5}",
+      "natural_language": "Pedestrian 436 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_024",
+      "claim_type": "attribute",
+      "subject": "437",
+      "subject_role": "walker_2",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.582, 'mean_min_knee_angle_deg': 140.5}",
+      "natural_language": "Pedestrian 437 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_025",
+      "claim_type": "attribute",
+      "subject": "438",
+      "subject_role": "walker_3",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.582, 'mean_min_knee_angle_deg': 140.5}",
+      "natural_language": "Pedestrian 438 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_026",
+      "claim_type": "attribute",
+      "subject": "439",
+      "subject_role": "walker_4",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.582, 'mean_min_knee_angle_deg': 140.6}",
+      "natural_language": "Pedestrian 439 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_027",
+      "claim_type": "attribute",
+      "subject": "440",
+      "subject_role": "walker_5",
+      "predicate": "activity_state",
+      "object": null,
+      "property_value": "walking",
+      "time": null,
+      "confidence": 0.7,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "inferred from walker_bones via a stride/knee-angle heuristic (classify_walker_activity), not a CARLA-given label; evidence={'stride_range_m': 0.583, 'mean_min_knee_angle_deg': 140.7}",
+      "natural_language": "Pedestrian 440 was walking for most of the trace (inferred from joint positions, not directly observed)."
+    },
+    {
+      "claim_id": "claim_028",
+      "claim_type": "spatial_relation",
+      "subject": "436",
+      "subject_role": "walker_1",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 60,
+        "total_ticks": 60,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 436 occupied the crosswalk for 100% of the clip (60/60 ticks)."
+    },
+    {
+      "claim_id": "claim_029",
+      "claim_type": "spatial_relation",
+      "subject": "437",
+      "subject_role": "walker_2",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 60,
+        "total_ticks": 60,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 437 occupied the crosswalk for 100% of the clip (60/60 ticks)."
+    },
+    {
+      "claim_id": "claim_030",
+      "claim_type": "spatial_relation",
+      "subject": "438",
+      "subject_role": "walker_3",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 60,
+        "total_ticks": 60,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 438 occupied the crosswalk for 100% of the clip (60/60 ticks)."
+    },
+    {
+      "claim_id": "claim_031",
+      "claim_type": "spatial_relation",
+      "subject": "439",
+      "subject_role": "walker_4",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 60,
+        "total_ticks": 60,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 439 occupied the crosswalk for 100% of the clip (60/60 ticks)."
+    },
+    {
+      "claim_id": "claim_032",
+      "claim_type": "spatial_relation",
+      "subject": "440",
+      "subject_role": "walker_5",
+      "predicate": "occupies",
+      "object": "crosswalk_468",
+      "property_value": {
+        "fraction_occupied": 1.0,
+        "occupied_ticks": 60,
+        "total_ticks": 60,
+        "contiguous": true
+      },
+      "time": {
+        "type": "interval",
+        "start": 0.0,
+        "end": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Pedestrian 440 occupied the crosswalk for 100% of the clip (60/60 ticks)."
+    },
+    {
+      "claim_id": "claim_033",
+      "claim_type": "event",
+      "subject": "436",
+      "subject_role": "walker_1",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 436 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_034",
+      "claim_type": "event",
+      "subject": "436",
+      "subject_role": "walker_1",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 436 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_035",
+      "claim_type": "event",
+      "subject": "437",
+      "subject_role": "walker_2",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 437 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_036",
+      "claim_type": "event",
+      "subject": "437",
+      "subject_role": "walker_2",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 437 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_037",
+      "claim_type": "event",
+      "subject": "438",
+      "subject_role": "walker_3",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 438 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_038",
+      "claim_type": "event",
+      "subject": "438",
+      "subject_role": "walker_3",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 438 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_039",
+      "claim_type": "event",
+      "subject": "439",
+      "subject_role": "walker_4",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 439 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_040",
+      "claim_type": "event",
+      "subject": "439",
+      "subject_role": "walker_4",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 439 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_041",
+      "claim_type": "event",
+      "subject": "440",
+      "subject_role": "walker_5",
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 440 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_042",
+      "claim_type": "event",
+      "subject": "440",
+      "subject_role": "walker_5",
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 5.9
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 440 exited the tracked scene."
+    }
+  ]
+}

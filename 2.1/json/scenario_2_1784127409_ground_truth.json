@@ -1,0 +1,196 @@
+{
+  "scene_id": "scenario_2_1784127409",
+  "source": "carla_groundtruth",
+  "metadata": {
+    "stopped_definition": "speed < 0.5 m/s for at least 5 consecutive ticks",
+    "missing_stopped_means": "not asserted (not false); absence does not imply the actor was moving",
+    "count_definition": "modal value across all ticks unless otherwise scoped",
+    "missing_count_means": "no count claim is generated for vehicle_count_near_intersection, pedestrian_count_near_intersection, or emergency_vehicle_count when the source log's schema never wrote that field; absence of the claim does not mean the count was zero",
+    "boundary_event": "true when actor was present at the first or last tick of the clip; true entry/exit may fall outside the trace window",
+    "tick_to_seconds": "tick index multiplied by fixed_delta_seconds"
+  },
+  "scenario_config": {},
+  "entities": [
+    {
+      "local_id": "512",
+      "type": "ego",
+      "name": "vehicle.tesla.model3",
+      "spawn_role": null
+    },
+    {
+      "local_id": "intersection_468",
+      "type": "intersection"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_001",
+      "claim_type": "object_presence",
+      "subject": "512",
+      "subject_role": null,
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "An ego vehicle is present in the scene."
+    },
+    {
+      "claim_id": "claim_002",
+      "claim_type": "object_presence",
+      "subject": "intersection_468",
+      "predicate": "present",
+      "object": null,
+      "property_value": null,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "The intersection is present in the scene."
+    },
+    {
+      "claim_id": "claim_003",
+      "claim_type": "attribute",
+      "subject": "512",
+      "subject_role": null,
+      "predicate": "stopped",
+      "object": null,
+      "property_value": true,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Ego vehicle was stopped (speed < 0.5 m/s) for at least 5 consecutive ticks."
+    },
+    {
+      "claim_id": "claim_004",
+      "claim_type": "attribute",
+      "subject": "512",
+      "subject_role": null,
+      "predicate": "max_speed",
+      "object": null,
+      "property_value": 19.13,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 512 reached a maximum speed of 19.13 m/s."
+    },
+    {
+      "claim_id": "claim_005",
+      "claim_type": "attribute",
+      "subject": "512",
+      "subject_role": null,
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -63.95,
+        "y": 129.12,
+        "z": -0.02
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Ego vehicle was at (-63.95, 129.12) at first appearance (t=0.0s)."
+    },
+    {
+      "claim_id": "claim_006",
+      "claim_type": "attribute",
+      "subject": "512",
+      "subject_role": null,
+      "predicate": "location",
+      "object": null,
+      "property_value": {
+        "x": -33.98,
+        "y": 125.01,
+        "z": 0.06
+      },
+      "time": {
+        "type": "point",
+        "t": 4.3
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Ego vehicle was at (-33.98, 125.01) at last appearance (t=4.3s)."
+    },
+    {
+      "claim_id": "claim_007",
+      "claim_type": "attribute",
+      "subject": "512",
+      "subject_role": null,
+      "predicate": "collision_infraction_count_static",
+      "object": null,
+      "property_value": 1,
+      "time": null,
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 512 incurred 1 collision-with-static infraction(s) (2s duration cap per continuous impact)."
+    },
+    {
+      "claim_id": "claim_008",
+      "claim_type": "event",
+      "subject": "512",
+      "subject_role": null,
+      "predicate": "entered",
+      "object": "scene",
+      "note": "actor present from start of trace; true entry may predate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 512 entered the tracked scene."
+    },
+    {
+      "claim_id": "claim_009",
+      "claim_type": "event",
+      "subject": "512",
+      "subject_role": null,
+      "predicate": "exited",
+      "object": "scene",
+      "note": "actor present until end of trace; true exit may postdate clip",
+      "boundary_event": true,
+      "time": {
+        "type": "point",
+        "t": 4.3
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "natural_language": "Actor 512 exited the tracked scene."
+    },
+    {
+      "claim_id": "claim_010",
+      "claim_type": "count",
+      "subject": "car",
+      "predicate": "detected_count_change",
+      "object": null,
+      "property_value": {
+        "class_name": "car",
+        "tick": 0,
+        "count": 1,
+        "previous_count": null
+      },
+      "time": {
+        "type": "point",
+        "t": 0.0
+      },
+      "confidence": 1.0,
+      "polarity": "positive",
+      "modality": "asserted",
+      "note": "baseline: first EIT frame observed, not a change from a real previous count",
+      "natural_language": "At tick 0, 1 car(s) detected (baseline)."
+    }
+  ]
+}
